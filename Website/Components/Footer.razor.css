@@ -1,0 +1,40 @@
+﻿.footer {
+    background-color: var(--grey);
+    width: 100%;
+    height: 12rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    padding-left: calc(max(100% - min(100%, 1200px), 2rem) / 2);
+    padding-right: calc(max(100% - min(100%, 1200px), 2rem) / 2);
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-height: 50%;
+    width: 100%;
+}
+
+.linkbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo {
+    object-fit: cover;
+    height: 100%;
+    background-color: transparent;
+}
+
+.dim > a {
+    text-decoration: none;
+    color: black;
+}

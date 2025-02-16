@@ -1,0 +1,36 @@
+﻿.upcoming {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+}
+
+.card-gallery {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: space-around;
+    overflow-x: auto;
+    width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.card {
+    flex: none;
+    min-height: 15rem;
+    width: 16rem;
+    border: 1px solid var(--grey);
+    border-radius: 0.5rem;
+    padding: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card > img {
+    width: 2rem;
+    height: 2rem;
+}

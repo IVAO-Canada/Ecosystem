@@ -1,0 +1,18 @@
+﻿.gallery {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: space-around;
+    overflow: auto;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    height: 30rem;
+    padding-left: 50%;
+    padding-right: 50%;
+}
+
+.banner {
+    aspect-ratio: 16 / 9;
+    background-color: var(--grey);
+    scroll-snap-align: center;
+}

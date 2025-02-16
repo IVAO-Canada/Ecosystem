@@ -1,0 +1,63 @@
+﻿.ongoing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 1rem;
+}
+
+.col {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.center {
+    align-items: center;
+}
+
+.banner {
+    background-color: var(--grey);
+    aspect-ratio: 16 / 9;
+}
+
+.cardstack {
+    height: 100%;
+    max-width: 20rem;
+    justify-content: space-evenly;
+}
+
+.card {
+    position: relative;
+    height: 5rem;
+    min-width: 20rem;
+    background-color: var(--grey);
+    border-radius: 0.5rem;
+}
+
+    .card > svg {
+        position: absolute;
+        left: 5%;
+        right: 80%;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+    }
+
+    .card > h5 {
+        position: absolute;
+        top: 15%;
+        left: calc(20% + 0.5rem);
+    }
+
+    .card > span {
+        position: absolute;
+        bottom: 10%;
+        left: calc(20% + 0.5rem);
+    }

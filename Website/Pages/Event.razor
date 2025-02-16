@@ -1,0 +1,51 @@
+﻿@page "/event/{Id:int}"
+
+<div class="col g-2">
+	<div class="row g-2">
+		<img src="https://wireframe.cc/images/img-placeholder-xs.svg" class="banner w-half" />
+		<div class="col g-1 even">
+			<h1>Event Name</h1>
+			<p>Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae legendos at vix ad putent delectus delicata usu.</p>
+			<a href="#booking" class="btn">Jump to Booking</a>
+		</div>
+	</div>
+
+	<div class="row g-2">
+		<div class="col g-2 w-half even">
+			<h2>Details</h2>
+			<p>Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae legendos at vix ad putent delectus delicata usu. Vidit dissentiet eos cu eum an brute copiosae hendrerit. Eos erant dolorum an. Per facer affert ut.</p>
+		</div>
+		<div class="col even g-1">
+			<div class="row g-1">
+				<img src="https://www.svgrepo.com/show/444728/international.svg" class="icon" />
+				<div class="col g-1">
+					<h5>Where</h5>
+					<p>Lorem ipsum dolor sit amet.</p>
+				</div>
+			</div>
+			<div class="row g-1">
+				<img src="https://www.svgrepo.com/show/444773/time-watch-1.svg" class="icon" />
+				<div class="col g-1">
+					<h5>When</h5>
+					<p>Lorem ipsum dolor sit amet.</p>
+				</div>
+			</div>
+			<div class="row g-1">
+				<img src="https://www.svgrepo.com/show/444768/star.svg" class="icon" />
+				<div class="col g-1">
+					<h5>Available Awards</h5>
+					<p>Lorem ipsum dolor sit amet.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="col center">
+		<h2>Book Now!</h2>
+	</div>
+</div>
+
+@code {
+	[Parameter]
+	public int Id { get; set; }
+}

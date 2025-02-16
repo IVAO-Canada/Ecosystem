@@ -1,0 +1,40 @@
+﻿@inject NavigationManager nav
+
+<div class="navbar">
+	<img class="logo" src="/img/white_text.svg" @onclick="@(() => nav.NavigateTo("/"))" />
+	<div class="spacer"></div>
+	<div class="dropdown">
+		<span class="title">Area 1</span>
+		<ul>
+			<li>Subitem 1</li>
+			<li>Subitem 2</li>
+			<li>Subitem 3</li>
+		</ul>
+	</div>
+	<div class="dropdown">
+		<span class="title">Area 2</span>
+		<ul>
+			<li>Subitem 1</li>
+			<li>Subitem 2</li>
+			<li>Subitem 3</li>
+		</ul>
+	</div>
+	<div class="dropdown">
+		<span class="title">Area 3</span>
+		<ul>
+			<li>Subitem 1</li>
+			<li>Subitem 2</li>
+			<li>Subitem 3</li>
+		</ul>
+	</div>
+
+	<AuthorizeView>
+		<Authorized>
+			<button class="signin">@(context.User.Identity?.Name ?? "?")</button>
+		</Authorized>
+		<NotAuthorized>
+			<button class="signin" @onclick="@(() => nav.NavigateTo($"/auth/login?redirectUrl={System.Web.HttpUtility.UrlEncode(nav.Uri)}", true))">Sign In</button>
+			<button class="join" @onclick="@(() => nav.NavigateTo("https://ivao.aero/members/person/register.htm"))">Join Now</button>
+		</NotAuthorized>
+	</AuthorizeView>
+</div>

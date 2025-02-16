@@ -1,0 +1,56 @@
+﻿.row {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.banner {
+    aspect-ratio: 16 / 9;
+    background-color: var(--grey);
+}
+
+.w-half {
+    width: 50%;
+}
+
+.g-1 {
+    gap: 1rem;
+}
+
+.g-2 {
+    gap: 2rem;
+}
+
+.even {
+    justify-content: space-evenly;
+}
+
+a.btn {
+    display: block;
+    text-decoration: none;
+    border-radius: 1rem;
+    background-color: var(--blue);
+    color: var(--white);
+    text-align: center;
+    padding: 0.5rem;
+}
+
+img.icon {
+    aspect-ratio: 1 / 1;
+    width: 3rem;
+    height: 3rem;
+    background-color: var(--grey);
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+.center {
+    align-items: center;
+}
